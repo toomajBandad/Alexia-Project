@@ -1,4 +1,4 @@
-import ServiceCart from "../serviceCart/serviceCart";
+import ServiceCart from "../serviceCart/ServiceCart";
 import imageCompliance from "../../assets/fotos/alt_compliance.svg";
 import imageManaged from "../../assets/fotos/alt_managed.svg";
 import imageOffensive from "../../assets/fotos/alt_offensive.svg";
