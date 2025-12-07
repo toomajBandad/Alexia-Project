@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
-function StateCard({ icon: Icon, value, suffix, prefix, caption, ariaLabel }) {
+function StatesCard({ icon: Icon, value, suffix, prefix, caption, ariaLabel }) {
   const cardVariants = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -30,4 +30,4 @@ function StateCard({ icon: Icon, value, suffix, prefix, caption, ariaLabel }) {
   );
 }
 
-export default StateCard;
+export default StatesCard;

@@ -1,7 +1,7 @@
 import { FiShield, FiDollarSign, FiTrendingDown } from "react-icons/fi";
 import TitleText from "../titleText/TitleText";
 import { motion } from "framer-motion";
-// import StateCard from "../stateCard/StateCard";
+import StatesCard from "../statesCard/StatesCard";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -47,8 +47,7 @@ function CountingSection() {
           viewport={{ once: true, amount: 0.3 }}
         >
           {stats.map((stat, i) => (
-            <div>test</div>
-            // <StateCard key={i} {...stat} />
+            <StatesCard key={i} {...stat} />
           ))}
         </motion.div>
       </div>
