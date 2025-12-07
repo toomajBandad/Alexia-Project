@@ -30,7 +30,7 @@ function CartSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-8 md:py-16 bg-gray-100">
       <div className="container mx-auto px-6 ">
         <TitleText>
           Comprehensive 360º cybersecurity: <br />

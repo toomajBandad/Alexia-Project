@@ -82,13 +82,14 @@ function ArticlesSection() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
-      <div className="mb-10 flex items-center justify-between">
+    <div className="max-w-6xl mx-auto px-6 py-6 md:py-12">
+      <div className="mb-10 flex flex-col md:flex-row items-center justify-between">
         <TitleText>
           <div>Latest Articles</div>
         </TitleText>
+
         <TitleText>
-          <div className="text-lg flex gap-1 items-center hover:cursor-pointer hover:text-blue-600">
+          <div className="text-sm md:text-lg flex  gap-1 items-center hover:cursor-pointer hover:text-blue-600">
             All Articles
             <FaAngleRight />
           </div>

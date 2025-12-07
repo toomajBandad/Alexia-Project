@@ -35,12 +35,12 @@ function CountingSection() {
   ];
 
   return (
-    <section className="py-25">
+    <section className="py-10 md:py-25">
       <div className="container mx-auto px-6">
         <TitleText>Is your business truly protected?</TitleText>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center mt-20"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center mt-5 md:mt-20"
           variants={containerVariants}
           initial="hidden"
           whileInView="show"

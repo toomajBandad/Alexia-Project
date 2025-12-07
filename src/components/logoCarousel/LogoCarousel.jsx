@@ -42,7 +42,7 @@ function LogoCarousel() {
   ];
 
   return (
-    <div className="relative w-full mx-auto pt-8 pb-4 bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 xl:px-30 md:px-14 px-0 mb-20">
+    <div className="relative w-full mx-auto pt-8 pb-4 bg-linear-to-r from-blue-600 via-blue-400 to-blue-600 xl:px-30 md:px-14 px-0 mb-8 md:mb-20">
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/70"></div>
 
@@ -54,7 +54,7 @@ function LogoCarousel() {
           </div>
         </TitleText>
 
-        <div className="mt-20">
+        <div className="mt-6 md:mt-20">
           <Swiper
             breakpoints={{
               400: { slidesPerView: 2, spaceBetween: 0 },
