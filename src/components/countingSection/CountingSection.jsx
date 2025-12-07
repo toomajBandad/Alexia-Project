@@ -1,7 +1,7 @@
 import { FiShield, FiDollarSign, FiTrendingDown } from "react-icons/fi";
 import TitleText from "../titleText/TitleText";
 import { motion } from "framer-motion";
-import StateCard from "../stateCard/stateCard";
+import StateCard from "../stateCard/StateCard";
 
 const containerVariants = {
   hidden: { opacity: 0 },
