@@ -4,7 +4,7 @@ import ContactUsSection from "../components/contactUsSection/ContactUsSection";
 import CountingSection from "../components/countingSection/CountingSection";
 import Hero from "../components/hero/Hero";
 import LogoCarousel from "../components/logoCarousel/LogoCarousel";
-import OurServices from "../components/ourServices/ourServices";
+import OurServices from "../components/ourServices/OurServices";
 
 function Home() {
   return (
