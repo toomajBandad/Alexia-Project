@@ -49,7 +49,7 @@ function LogoCarousel() {
       {/* Content above overlay */}
       <div className="relative z-10 pb-10">
         <TitleText>
-          <div className="my-10 text-gray-50 ">
+          <div className="my-10 text-gray-200 ">
             We protect companies just like yours
           </div>
         </TitleText>

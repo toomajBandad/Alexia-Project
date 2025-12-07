@@ -17,7 +17,7 @@ function ContactUsSection() {
       </div>
 
       {/* Right side: Form */}
-      <div className=" shadow-lg rounded-lg p-8">
+      <div>
         <ContactForm />
       </div>
     </div>

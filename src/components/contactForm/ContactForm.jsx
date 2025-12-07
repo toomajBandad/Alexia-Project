@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import BtnPro from "../btnPro/BtnPro";
 
 export default function ContactForm() {
   const {
@@ -26,7 +27,7 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="max-w-2xl mx-auto text-center p-6 bg-green-100 rounded">
+      <div className="max-w-2xl mx-auto text-center p-6 bg-green-100">
         <h2 className="text-2xl font-bold text-green-700">Thank you!</h2>
         <p className="mt-2 text-green-600">
           Your submission has been received. We’ll get back to you soon.
@@ -38,14 +39,14 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-2xl mx-auto space-y-6"
+      className="max-w-2xl mx-auto space-y-6 shadow-xl p-8"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label className="block">Fullname</label>
           <input
             {...register("fullname", { required: "Fullname is required" })}
-            className="border p-2 w-full"
+            className="inputStyle"
           />
           {errors.fullname && (
             <p className="text-red-500">{errors.fullname.message}</p>
@@ -60,7 +61,7 @@ export default function ContactForm() {
               required: "Email is required",
               pattern: { value: /^\S+@\S+$/i, message: "Invalid email" },
             })}
-            className="border p-2 w-full"
+            className="inputStyle"
           />
           {errors.email && (
             <p className="text-red-500">{errors.email.message}</p>
@@ -78,7 +79,7 @@ export default function ContactForm() {
                 message: "Invalid phone number",
               },
             })}
-            className="border p-2 w-full"
+            className="inputStyle"
           />
           {errors.phone && (
             <p className="text-red-500">{errors.phone.message}</p>
@@ -91,7 +92,7 @@ export default function ContactForm() {
             {...register("companyName", {
               required: "Company name is required",
             })}
-            className="border p-2 w-full"
+            className="inputStyle"
           />
           {errors.companyName && (
             <p className="text-red-500">{errors.companyName.message}</p>
@@ -102,7 +103,7 @@ export default function ContactForm() {
           <label className="block">Profile</label>
           <select
             {...register("profile", { required: "Profile is required" })}
-            className="border p-2 w-full"
+            className="inputStyle"
           >
             <option value="">Select profile</option>
             <option value="student">Student</option>
@@ -117,7 +118,7 @@ export default function ContactForm() {
           <label className="block">Position</label>
           <select
             {...register("position", { required: "Position is required" })}
-            className="border p-2 w-full"
+            className="inputStyle"
           >
             <option value="">Select position</option>
             <option value="junior">Junior</option>
@@ -133,7 +134,7 @@ export default function ContactForm() {
         <label className="block">Message</label>
         <textarea
           {...register("message", { required: "Message is required" })}
-          className="border p-2 w-full"
+          className="border border-gray-300 p-2 w-full focus:outline-blue-700"
           rows={4}
         />
         {errors.message && (
@@ -155,11 +156,8 @@ export default function ContactForm() {
         <p className="text-red-500">{errors.privacy.message}</p>
       )}
 
-      <button
-        type="submit"
-        className="bg-gray-500 px-4 py-2 hover:bg-gray-600 hover:cursor-pointer text-white"
-      >
-        Submit
+      <button type="submit" className=" px-0 py-0 hover:cursor-pointer">
+        <BtnPro>Submit</BtnPro>
       </button>
     </form>
   );

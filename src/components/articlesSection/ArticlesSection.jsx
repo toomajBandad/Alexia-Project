@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { FaAngleRight } from "react-icons/fa";
 import MainCart from "../mainCart/MainCart";
 import img1 from "../../assets/backgrounds/1.jpg";
 import img2 from "../../assets/backgrounds/2.jpg";
@@ -82,9 +83,17 @@ function ArticlesSection() {
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
-      <TitleText>
-        <div className="mb-10"> Latest Articles</div>
-      </TitleText>
+      <div className="mb-10 flex items-center justify-between">
+        <TitleText>
+          <div>Latest Articles</div>
+        </TitleText>
+        <TitleText>
+          <div className="text-lg flex gap-1 items-center hover:cursor-pointer hover:text-blue-600">
+            All Articles
+            <FaAngleRight />
+          </div>
+        </TitleText>
+      </div>
 
       <Swiper
         modules={[

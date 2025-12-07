@@ -1,4 +1,5 @@
 import React from "react";
+import BtnPro from "../btnPro/BtnPro";
 
 function MainCart({ image, title, description, link }) {
   const truncatedDescription =
@@ -11,11 +12,8 @@ function MainCart({ image, title, description, link }) {
         <h3 className="text-lg  font-semibold text-back mb-4">{title}</h3>
         <p className="text-gray-700 mb-4 text-sm ">{truncatedDescription}</p>
         {link && (
-          <a
-            href={link}
-            className="inline-block px-4 py-2 bg-gray-800 text-white hover:bg-black transition"
-          >
-            Learn More
+          <a href={link}>
+            <BtnPro>Learn More</BtnPro>
           </a>
         )}
       </div>
